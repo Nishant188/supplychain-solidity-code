@@ -1,0 +1,276 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_materialName",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pid",
+						"type": "bytes32"
+					}
+				],
+				"name": "IsAddedInInventory",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_materialname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_availableDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expiryDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "addRawMaterial",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_producerID",
+						"type": "address"
+					}
+				],
+				"name": "getItems",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "ArrayIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "PId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "MaterialName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "AvailableDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Quantity",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ExpiryDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "IsAdded",
+								"type": "bool"
+							},
+							{
+								"internalType": "enum Types.productAvailablity",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Types.Product[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_prodId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getProductDetails",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "ArrayIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "PId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "MaterialName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "AvailableDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Quantity",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ExpiryDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "IsAdded",
+								"type": "bool"
+							},
+							{
+								"internalType": "enum Types.productAvailablity",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Types.Product",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_pid",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_availableDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expiryDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "updateRawMaterial",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Optimized Amira Code/Interfaces/IInventory.sol": "IInventroy"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 100
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Optimized Amira Code/Interfaces/IInventory.sol": {
+			"keccak256": "0x70e4c79f89a3f388cb7a59f0fd9b25d7776e01240e2f548b972a393ba494bde4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da5d00b9e8820812c5be55c47e2a92f13e2b5083d7b7cd22bf9cf9e1338b3db2",
+				"dweb:/ipfs/QmP8RFGbbpFUkjzPUz5rcz4rTvgLCtYvuRfUaV6BA2aSNH"
+			]
+		},
+		"Optimized Amira Code/Library.sol": {
+			"keccak256": "0x7f9a3a05c7b40375922209dfd3dc35065f54eb952d0bb26f2dd8e7b1cc854f29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d7c698d7e648eb6dab96ebbbd83f4d1ceb65c6d78af61833319ab3b087a4488a",
+				"dweb:/ipfs/QmTbp7rtYfgZZbof4MYUTBQQQ9gaK6rvN9JZosA2QSBTZ6"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "getRole",
+				"outputs": [
+					{
+						"internalType": "enum Types.StakeHolder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Optimized Amira Code v2/Interfaces/IRegister.sol": "IStakeHolderRegistration"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Optimized Amira Code v2/Interfaces/IRegister.sol": {
+			"keccak256": "0xc683391a34fe2a6d721772a1009184bf39b6f9c0a5b9aae6fc1ed8fb6a92b1db",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1297a099acfc42216d88f2ebb93c41a42d06ffd2c91ab07ef9122145ff0c5b77",
+				"dweb:/ipfs/QmZ1KzCiRNsHs7rGBdAUv9bc8KyxRxX1GCZcAGrCBtBoVi"
+			]
+		},
+		"Optimized Amira Code v2/Library.sol": {
+			"keccak256": "0x35c0c7992746947607cfb3c6ba583cf5dd36751be69a085368f5fbcb99190466",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d6801140575a8dbadbb2a97ebbf537ca2cd78b7c60dcf84f222edd575374073",
+				"dweb:/ipfs/QmQMLS34YBa2b9SwfxU8tgWQPqAsPhM16NpknTmezGWRND"
+			]
+		}
+	},
+	"version": 1
+}

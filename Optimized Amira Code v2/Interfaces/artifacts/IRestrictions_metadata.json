@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "enum Types.StakeHolder",
+								"name": "role",
+								"type": "uint8"
+							},
+							{
+								"internalType": "address",
+								"name": "id_",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "MobNo",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "IsRegistered",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "country",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "city",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Types.Stakeholder",
+						"name": "user",
+						"type": "tuple"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Types.StakeHolder",
+						"name": "role",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "has",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isStakeHolderExists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Optimized Amira Code/Interfaces/IRestrictions.sol": "IRestrictions"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 100
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Optimized Amira Code/Interfaces/IRestrictions.sol": {
+			"keccak256": "0xb7695d0fb0109d7e7f4199c5053b5cd417336f46c8009d49cb13e39a6753519c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e5b8ae7af4c0acf3c24a0d95966594e25eabf14757b8488187b16219cd27353a",
+				"dweb:/ipfs/QmcPPAktS2fK2dELxpD9SmM5MdbrTBkuUvtnrVxerAK5p9"
+			]
+		},
+		"Optimized Amira Code/Library.sol": {
+			"keccak256": "0x7f9a3a05c7b40375922209dfd3dc35065f54eb952d0bb26f2dd8e7b1cc854f29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d7c698d7e648eb6dab96ebbbd83f4d1ceb65c6d78af61833319ab3b087a4488a",
+				"dweb:/ipfs/QmTbp7rtYfgZZbof4MYUTBQQQ9gaK6rvN9JZosA2QSBTZ6"
+			]
+		}
+	},
+	"version": 1
+}
